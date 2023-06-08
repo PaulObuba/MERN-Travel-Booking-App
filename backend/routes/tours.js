@@ -24,7 +24,7 @@ router.get('/', getAllTour)
 router.get('/search/getTourBySearch', getTourBySearch)
 
 // get featured Tour
-router.get('/search/getFeaturedTour', getFeaturedTour)
+router.get('/search/getFeaturedTours', getFeaturedTour)
 
 // get Tour Count
 router.get('/search/getTourCount', getTourCount)
