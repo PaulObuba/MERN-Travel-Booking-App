@@ -7,12 +7,18 @@ import ShearchBar from "../sheared/ShearchBar";
 import TourCard from "../sheared/TourCard";
 import NewsLetter from "../sheared/NewsLetter";
 
-import tourData from "../assets/data/tours";
+// import tourData from "../assets/data/tours";
+import useFetch from "../hooks/useFetch";
+import { BASE_URL } from "../utils/config";
+// import [data: tours, loading, error ] from 
 
 
 const Tours = () => {
   const [pageCount, setPageCount] = useState(0);
   const [page, setPage] = useState(0);
+
+  const { data: tours, loading, error } = useFetch(`${BASE_URL}/tours`);
+  console.log(tours)
 
   useEffect(() => {
     const pages = Math.ceil(5 / 2);
@@ -32,7 +38,7 @@ const Tours = () => {
       <section className="pt-0">
         <Container>
           <Row>
-            {tourData?.map(tour => (
+            {tours?.map(tour => (
               <Col lg='3' className="mb-4" key={tour.id}>
                 <TourCard tour={tour} />
               </Col>
