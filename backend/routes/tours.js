@@ -6,7 +6,7 @@ import { verifyAdmin } from '../utils/verifyToken.js';
 const router = express.Router();
 
 // Create New Tour
-router.post('/', verifyAdmin, createTour)
+router.post('/', createTour)
 
 // update New Tour
 router.put('/:id', verifyAdmin, updateTour)
