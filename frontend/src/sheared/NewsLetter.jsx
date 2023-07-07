@@ -22,7 +22,7 @@ const NewsLetter = () => {
           </Col>
 
           <Col>
-            <img src={mailTouris} alt='' />
+            <img src={mailTouris} alt='' className='newsletter__img' />
           </Col>
         </Row>
       </Container>

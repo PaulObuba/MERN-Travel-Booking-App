@@ -51,6 +51,15 @@
   margin-bottom: 3rem;
 }
 
+.rating__group span {
+  cursor: pointer;
+}
+/* 
+.rating__group span i:hover {
+  background-color: yellow;
+  transform: scale(1.3);
+} */
+
 .review__input {
   display: flex;
   justify-content: space-between;
@@ -107,4 +116,21 @@
 
 .review__item span {
   font-weight: 500;
+}
+
+/* Responsiveness */
+
+@media only screen and ( max-width: 768px ) {
+  .tour__extra-details {
+    flex-wrap: wrap;
+    row-gap: 1rem;
+  }
+
+  .tour__extra-details span {
+    font-size: 0.9rem !important;
+  }
+
+  .tour__extra-details span i {
+    font-size: 1rem;
+  }
 }

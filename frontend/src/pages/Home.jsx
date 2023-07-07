@@ -110,8 +110,8 @@ const Home = () => {
               </div>
             </Col>
             <Col>
-              <div className='experience__img'>
-                <img src={experienceImg} alt='' />
+              <div>
+                <img src={experienceImg} alt='' className='experience__img' />
               </div>
             </Col>
           </Row>

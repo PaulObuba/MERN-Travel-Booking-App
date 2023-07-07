@@ -26,7 +26,7 @@
 }
 
 .card__top span i {
-color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .tour__rating {
@@ -86,4 +86,25 @@ color: var(--secondary-color);
 
 .tour__img a:hover {
   color: #fff;
+}
+
+/* Responsiveness */
+
+@media only screen and (max-eidth: 576px) {
+  .tour__title {
+    font-size: 1rem;
+  }
+
+  .booking__btn a {
+    font-size: 0.8rem;
+  }
+
+  .booking__btn {
+    padding: 0.2rem 0.5rem !important;
+  }
+
+  .tour__location,
+  .tour__rating {
+    font-size: 0.8rem;
+  }
 }
